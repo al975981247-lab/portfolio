@@ -100,10 +100,8 @@
   }
 
   .shop-filters {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
+    gap: 5px;
+    padding: 10px 0;
   }
 
   .shop-filters label > span {
@@ -851,6 +849,84 @@
   .shop-card__visual {
     flex-basis: 240px;
     height: 240px;
+  }
+}
+
+/* Authoritative final storefront layout. */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)) !important;
+  grid-template-rows: max-content;
+  align-items: stretch;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.shop-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  height: 100%;
+  min-height: 0;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.shop-card__body {
+  min-width: 0;
+}
+
+.shop-card__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin: 0 0 12px;
+}
+
+.shop-card__visual img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.shop-card h2 {
+  display: block !important;
+  width: 100%;
+  margin: 12px 0 8px;
+  font-size: 1rem;
+  line-height: 1.4;
+  word-break: normal;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.shop-card p {
+  min-height: 0;
+  height: auto;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.shop-card__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .shop-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 14px;
   }
 }
 
