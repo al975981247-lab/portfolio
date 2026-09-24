@@ -202,11 +202,13 @@ function Shop() {
             tabIndex="0"
           >
             <div className="shop-card__topline"><span>{String(product.id).padStart(2, "0")}</span></div>
-            <div className="shop-card__visual" aria-hidden="true">
-              <img src={product.image} alt="" />
+            <div className="shop-card__body">
+              <div className="shop-card__visual" aria-hidden="true">
+                <img src={product.image} alt="" />
+              </div>
+              <h2>{product.name}</h2>
+              <p>{product.description}</p>
             </div>
-            <h2>{product.name}</h2>
-            <p>{product.description}</p>
             <div className="shop-card__footer">
               <strong>{formatPrice(product.price)}</strong>
               <button type="button" onClick={(event) => { event.stopPropagation(); addToOrders(product); }}>Order <span aria-hidden="true">-&gt;</span></button>

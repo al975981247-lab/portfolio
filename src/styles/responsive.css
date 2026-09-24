@@ -855,14 +855,19 @@
 /* Final product-card sizing overrides. */
 .shop-grid {
   grid-template-rows: max-content;
-  align-items: start;
+  align-items: stretch;
 }
 
 .shop-card {
-  height: auto;
+  height: 100%;
   min-height: 0;
   padding: 12px;
   align-self: start;
+  justify-content: space-between;
+}
+
+.shop-card__body {
+  min-width: 0;
 }
 
 .shop-card__topline {
@@ -914,7 +919,7 @@
 
 .shop-card__footer {
   flex: 0 0 auto;
-  margin-top: 10px;
+  margin-top: 12px;
   padding-top: 10px;
 }
 
