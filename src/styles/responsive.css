@@ -966,6 +966,66 @@
   }
 }
 
+/* Mobile-first storefront layout. */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.shop-card {
+  height: 100%;
+  padding: 16px;
+  background-color: #0f2343;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.shop-card h2 {
+  margin: 12px 0 8px;
+  font-size: 1rem;
+  line-height: 1.4;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.shop-card__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin: 0 0 12px;
+}
+
+.shop-card__visual img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.shop-card__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.shop-card__footer button {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .shop-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 14px;
+  }
+}
+
 @media (max-width: 290px) {
   body {
     min-width: 0;
