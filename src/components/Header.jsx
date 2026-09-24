@@ -39,7 +39,7 @@ export default function Header() {
                 </li>
               ))}
               <li>
-                <a className="header__shop-link" href="/shop.html" target="_blank" rel="noreferrer">
+                <a className="header__shop-link" href="/shop.html">
                   Shop
                 </a>
               </li>
