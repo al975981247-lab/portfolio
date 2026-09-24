@@ -2,7 +2,7 @@
 
 :root { color: #edf4ff; background: #081a36; font-family: "Hanken Grotesk", sans-serif; }
 * { box-sizing: border-box; }
-body { min-width: 320px; margin: 0; background: #081a36; }
+body { min-width: 0; margin: 0; background: #081a36; }
 button, input, select { font: inherit; }
 
 .shop-page { width: min(1240px, calc(100% - 64px)); margin: 0 auto; padding: 28px 0 72px; }
