@@ -393,6 +393,64 @@
   }
 }
 
+/* Handset refinement for widths up to 393px. */
+@media (min-width: 320px) and (max-width: 393px) {
+  .container {
+    width: calc(100% - 20px);
+  }
+
+  .header__links {
+    gap: 7px;
+  }
+
+  .header__links a {
+    font-size: 11px;
+  }
+
+  .header__theme {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+
+  .section {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
+  .hero {
+    min-height: calc(100svh - 64px);
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  .hero__name {
+    font-size: clamp(46px, 16.5vw, 65px);
+  }
+
+  .hero__role {
+    font-size: 17px;
+  }
+
+  .hero__actions {
+    gap: 9px;
+    margin-top: 24px;
+  }
+
+  .hero__actions .btn {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .section__title {
+    font-size: 28px;
+  }
+
+  .shop-hero {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+
 /* Stage 2: large phones and small tablets, 481-767px */
 @media (min-width: 481px) and (max-width: 767px) {
   .container {
