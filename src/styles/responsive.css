@@ -903,7 +903,8 @@
   height: auto;
   min-height: 0;
   margin-bottom: 6px;
-  overflow-wrap: anywhere;
+  word-break: normal;
+  overflow-wrap: break-word;
   white-space: normal;
   font-size: 17px;
   font-weight: 600;
@@ -913,7 +914,8 @@
   flex: 0 0 auto;
   height: auto;
   min-height: 0;
-  overflow-wrap: anywhere;
+  word-break: normal;
+  overflow-wrap: break-word;
   white-space: normal;
 }
 
