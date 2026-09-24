@@ -1,0 +1,92 @@
+.hero {
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__greeting {
+  margin: 0 0 6px;
+  font-size: 22px;
+  color: #bfd2f4;
+  letter-spacing: 0.32px;
+}
+
+.hero__name {
+  margin: 0;
+  font-size: 104px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -5px;
+  color: #edf4ff;
+}
+
+.hero__role {
+  margin: 12px 0 0;
+  font: 600 22px Arial, sans-serif;
+  color: #5ea0ff;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.hero__actions .btn {
+  min-width: 150px;
+  justify-content: center;
+  padding: 14px 20px;
+  border-radius: 14px;
+}
+
+.hero__actions .btn--primary {
+  background: #5ea0ff;
+  border-color: #5ea0ff;
+  color: #07192e;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: calc(100svh - 64px);
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .hero__content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+  .hero__name {
+    font-size: clamp(52px, 18vw, 88px);
+    letter-spacing: -3px;
+    overflow-wrap: anywhere;
+  }
+
+  .hero__role {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .hero {
+    min-height: 620px;
+  }
+
+  .hero__name {
+    font-size: clamp(72px, 12vw, 104px);
+  }
+}
