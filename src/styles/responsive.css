@@ -969,7 +969,7 @@
 /* Mobile-first storefront layout. */
 .shop-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)) !important;
   gap: 12px;
   width: 100%;
   box-sizing: border-box;
