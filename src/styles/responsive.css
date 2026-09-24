@@ -819,6 +819,54 @@
   }
 }
 
+/* Compact portfolio page scaling. */
+@media (max-width: 290px) {
+  .container { width: calc(100% - 12px); }
+  body { font-size: 13px; }
+  .section { padding-top: 28px; padding-bottom: 28px; }
+  .section__title { margin-bottom: 18px; font-size: 24px; }
+  .hero__name { font-size: clamp(38px, 15vw, 54px); }
+  .btn { padding: 7px 9px; font-size: 11px; }
+  .skill-card { min-height: 120px; padding: 12px 8px; }
+  .education-card { min-height: 160px; }
+}
+
+@media (min-width: 291px) and (max-width: 480px) {
+  .section { padding-top: 34px; padding-bottom: 34px; }
+  .section__title { margin-bottom: 20px; font-size: 27px; }
+  .hero__name { font-size: clamp(42px, 15vw, 62px); }
+  .btn { padding: 8px 10px; font-size: 12px; }
+  .skill-card { min-height: 140px; padding: 15px 10px; }
+  .education-card { min-height: 180px; }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .section { padding-top: 40px; padding-bottom: 40px; }
+  .section__title { margin-bottom: 22px; font-size: 31px; }
+  .hero__name { font-size: clamp(54px, 12vw, 78px); }
+  .btn { padding: 9px 12px; font-size: 13px; }
+  .skill-card { min-height: 155px; padding: 18px 12px; }
+  .education-card { min-height: 195px; }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section { padding-top: 48px; padding-bottom: 48px; }
+  .section__title { margin-bottom: 28px; font-size: 36px; }
+  .hero__name { font-size: clamp(62px, 8vw, 82px); }
+  .btn { padding: 9px 14px; font-size: 14px; }
+  .skill-card { min-height: 175px; padding: 22px 14px; }
+  .education-card { min-height: 215px; }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .section { padding-top: 54px; padding-bottom: 54px; }
+  .section__title { margin-bottom: 32px; font-size: 40px; }
+  .hero__name { font-size: clamp(70px, 8vw, 92px); }
+  .btn { padding: 10px 16px; font-size: 14px; }
+  .skill-card { min-height: 185px; padding: 24px 16px; }
+  .education-card { min-height: 225px; }
+}
+
 @media (min-width: 291px) and (max-width: 348px) {
   .shop-card {
     height: 110px;
