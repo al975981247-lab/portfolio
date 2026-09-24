@@ -993,10 +993,13 @@ section[id] {
 
   .shop-order strong,
   .shop-order b,
-  .shop-order small,
-  .shop-order__remove {
+  .shop-order small {
     font-size: 11px;
   }
+
+  .shop-order__quantity { gap: 4px; }
+  .shop-order__quantity button { width: 22px; height: 22px; }
+  .shop-order__quantity span { font-size: 11px; }
 
   .shop-details {
     padding: 18px;

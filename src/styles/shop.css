@@ -63,8 +63,10 @@ button, input, select { font: inherit; }
 .shop-order strong, .shop-order b { color: #edf4ff; }
 .shop-order small { display: block; margin-top: 3px; color: #8da8cf; }
 .shop-order b { font-size: 13px; }
-.shop-order__remove { padding: 5px 0; border: 0; background: transparent; color: #8da8cf; font-size: 12px; cursor: pointer; }
-.shop-order__remove:hover { color: #5ea0ff; }
+.shop-order__quantity { display: flex; align-items: center; gap: 7px; }
+.shop-order__quantity button { display: grid; width: 24px; height: 24px; place-items: center; padding: 0; border: 1px solid #2b5687; border-radius: 4px; background: transparent; color: #bfd2f4; cursor: pointer; }
+.shop-order__quantity button:hover { border-color: #5ea0ff; color: #5ea0ff; }
+.shop-order__quantity span { min-width: 14px; color: #edf4ff; font-size: 13px; text-align: center; }
 .shop-details { display: grid; grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr); gap: 20px; width: min(calc(100vw - 48px), 1180px); height: min(calc(100vh - 48px), 760px); overflow: hidden; padding: 44px 20px 16px; }
 .shop-details__close { position: absolute; top: 18px; right: 20px; }
 .shop-details__visual { display: grid; position: sticky; top: 0; place-items: center; min-height: 260px; margin: 0; border-radius: 5px; background: linear-gradient(135deg, #163d6b, #0a2447 58%, #5ea0ff); }

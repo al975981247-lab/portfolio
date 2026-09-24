@@ -144,6 +144,14 @@ function Shop() {
     setOrders((currentOrders) => currentOrders.filter((order) => order.id !== productId));
   }
 
+  function updateOrderQuantity(productId, change) {
+    setOrders((currentOrders) => currentOrders.flatMap((order) => {
+      if (order.id !== productId) return [order];
+      const quantity = order.quantity + change;
+      return quantity > 0 ? [{ ...order, quantity }] : [];
+    }));
+  }
+
   return (
     <>
       <div className={`shop-loader${isLoading ? "" : " shop-loader--hidden"}`} aria-hidden={!isLoading}>
@@ -233,7 +241,11 @@ function Shop() {
                 <img className="shop-order__icon" src={order.image} alt="" />
                 <div><strong>{order.name}</strong><small>Quantity: {order.quantity}</small></div>
                 <b>{formatPrice(order.price * order.quantity)}</b>
-                <button className="shop-order__remove" type="button" onClick={() => removeFromOrders(order.id)}>Remove</button>
+                <div className="shop-order__quantity" aria-label={`Quantity for ${order.name}`}>
+                  <button type="button" onClick={() => updateOrderQuantity(order.id, -1)} aria-label={`Decrease ${order.name}`}>-</button>
+                  <span>{order.quantity}</span>
+                  <button type="button" onClick={() => updateOrderQuantity(order.id, 1)} aria-label={`Increase ${order.name}`}>+</button>
+                </div>
               </div>
             ))}
           </section>
