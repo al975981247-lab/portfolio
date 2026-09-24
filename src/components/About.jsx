@@ -9,7 +9,7 @@ export default function About() {
       <div className="about">
         <div className="about__text">
           <p>
-            Hello! My name is Muhammadamin. I am a junior front-end developer
+            Hello, my name is Muhammadamin. I am a junior front-end developer
             who enjoys turning ideas into clear, responsive, and useful web
             experiences.
           </p>

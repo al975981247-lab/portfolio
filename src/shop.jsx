@@ -14,6 +14,10 @@ const apiProducts = JSON.parse(apiData).products.map((product) => ({
   image: product.images?.[0] || product.thumbnail,
   stock: product.stock,
   rating: product.rating,
+  reviews: (product.reviews || []).map((review) => ({
+    ...review,
+    comment: review.comment?.replace(/!/g, ""),
+  })),
 }));
 
 const additionalProducts = [
