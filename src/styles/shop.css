@@ -29,7 +29,7 @@ button, input, select { font: inherit; }
 .shop-card { height: 500px; display: flex; flex-direction: column; padding: 18px; border: 1px solid #1d3b63; border-radius: 6px; background: #0f2343; cursor: pointer; transition: transform 180ms ease, box-shadow 180ms ease; }
 .shop-card:hover { transform: translateY(-4px); box-shadow: 0 14px 24px rgba(0, 0, 0, 0.24); }
 .shop-card__topline { display: flex; justify-content: space-between; gap: 10px; color: #7894bd; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; }
-.shop-card__visual { position: relative; z-index: 0; display: grid; flex: 0 0 250px; place-items: center; height: 250px; margin: 16px -18px 18px; overflow: visible; border-radius: 5px; background: linear-gradient(135deg, #163d6b, #0a2447 58%, #5ea0ff); }
+.shop-card__visual { position: relative; z-index: 0; display: grid; flex: 0 0 250px; place-items: center; height: 250px; margin: 16px -18px 18px; overflow: visible; border-radius: 5px; background: #081a36; }
 .shop-card__visual img { position: relative; z-index: 1; display: block; width: 100%; height: 100%; min-width: 0; min-height: 0; object-fit: contain; object-position: center center; filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.28)); }
 .shop-card h2 { flex: 0 0 47px; min-height: 47px; margin: 0 0 9px; overflow: hidden; color: #edf4ff; font-family: "Bricolage Grotesque", sans-serif; font-size: 21px; line-height: 1.1; }
 .shop-card p { flex: 0 0 42px; min-height: 42px; margin: 0; overflow: hidden; color: #bfd2f4; font-size: 14px; line-height: 1.5; }
@@ -38,7 +38,7 @@ button, input, select { font: inherit; }
 .shop-card strong { font-size: 17px; }
 .shop-empty { padding: 48px 0; color: #bfd2f4; text-align: center; }
 
-.shop-pagination { display: flex; justify-content: center; gap: 7px; padding-top: 42px; }
+.shop-pagination { display: flex; justify-content: center; gap: 7px; padding-top: 42px; background-color: #081a36; }
 .shop-pagination button { width: 36px; height: 36px; border: 1px solid #1d3b63; border-radius: 5px; background: transparent; color: #bfd2f4; cursor: pointer; }
 .shop-pagination button:hover:not(:disabled), .shop-pagination button.is-active { border-color: #5ea0ff; background: #5ea0ff; color: #07182d; }
 .shop-pagination button:disabled { cursor: not-allowed; opacity: 0.35; }
@@ -53,7 +53,7 @@ button, input, select { font: inherit; }
 
 .shop-overlay { position: fixed; inset: 0; z-index: 30; display: grid; place-items: center; padding: 24px; background: rgba(2, 10, 24, 0.78); }
 .shop-panel, .shop-details { position: relative; width: min(100%, 980px); max-height: min(760px, 90vh); overflow: auto; padding: 28px; border: 1px solid #2b5687; border-radius: 8px; background: #0f2343; box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35); }
-.shop-panel { width: min(100%, 520px); }
+.shop-panel { width: min(100%, 520px); background: #081a36; }
 .shop-panel__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
 .shop-panel h2, .shop-details h2 { margin: 0; color: #edf4ff; font-family: "Bricolage Grotesque", sans-serif; }
 .shop-panel__header button, .shop-details__close { border: 0; background: transparent; color: #bfd2f4; font-size: 28px; line-height: 1; cursor: pointer; }

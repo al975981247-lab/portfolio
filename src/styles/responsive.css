@@ -788,7 +788,36 @@ section[id] {
     padding: 10px;
   }
 
-  .shop-panel,
+  .shop-panel {
+    padding: 14px;
+  }
+
+  .shop-panel__header {
+    margin-bottom: 10px;
+  }
+
+  .shop-panel__header button {
+    font-size: 24px;
+  }
+
+  .shop-order {
+    grid-template-columns: 34px minmax(0, 1fr) auto auto;
+    gap: 6px;
+    padding: 10px 0;
+  }
+
+  .shop-order__icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .shop-order strong,
+  .shop-order b,
+  .shop-order small,
+  .shop-order__remove {
+    font-size: 11px;
+  }
+
   .shop-details {
     padding: 18px;
   }

@@ -1,8 +1,4 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
 import Section from "./Section.jsx";
-import "swiper/css";
-import "swiper/css/navigation";
 import "../styles/education.css";
 
 const education = [
@@ -41,20 +37,9 @@ const education = [
 export default function Education() {
   return (
     <Section id="education" title="Education">
-      <Swiper
-        modules={[Navigation]}
-        spaceBetween={16}
-        slidesPerView={1}
-        navigation
-        breakpoints={{
-          640: { slidesPerView: 2 },
-          900: { slidesPerView: 3 },
-          1200: { slidesPerView: 5 },
-        }}
-        className="education-swiper"
-      >
+      <div className="education-grid">
         {education.map((item) => (
-          <SwiperSlide key={`${item.title}-${item.place}`}>
+          <div key={`${item.title}-${item.place}`}>
             <article className="education-card">
               <img className="education-card__image" src={item.logo} alt={`${item.title} logo`} />
               <div className="education-card__content">
@@ -63,9 +48,9 @@ export default function Education() {
                 <p>{item.place}</p>
               </div>
             </article>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
+      </div>
     </Section>
   );
 }
