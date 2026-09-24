@@ -100,8 +100,10 @@
   }
 
   .shop-filters {
-    gap: 5px;
-    padding: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
   }
 
   .shop-filters label > span {
