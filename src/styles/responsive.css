@@ -649,6 +649,41 @@
   }
 }
 
+@media (max-width: 290px) {
+  body {
+    min-width: 0;
+  }
+
+  .shop-page {
+    width: calc(100% - 12px);
+  }
+
+  .shop-grid {
+    gap: 4px;
+  }
+
+  .shop-card {
+    height: 104px;
+    padding: 3px;
+  }
+
+  .shop-card__visual {
+    flex-basis: 48px;
+    height: 48px;
+    margin: 2px -3px 4px;
+  }
+
+  .shop-card h2 {
+    height: 16px;
+    margin-bottom: 1px;
+    font-size: 7px;
+  }
+
+  .shop-card strong {
+    font-size: 6px;
+  }
+}
+
 /* Extra navbar stages: 621-770px, 561-620px, and 320-560px. */
 html {
   scroll-padding-top: 56px;
